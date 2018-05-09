@@ -2,6 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53caf991-0d43-4a93-9f44-b83b20f9e2eb" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Perceptron/Trytyry.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Perceptron/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Perceptron/neuron-end.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Perceptron/neuronend.obj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Perceptron/neuronobj.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Perceptron/predict.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Perceptron/predict2.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Perceptron/ws.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/perceptron.py" afterPath="$PROJECT_DIR$/perceptron.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +30,8 @@
       <file leaf-file-name="perceptron.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/perceptron.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="101" column="18" lean-forward="true" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
+            <state relative-caret-position="-406">
+              <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
                 <element signature="e#177#234#0" expanded="false" />
@@ -426,12 +434,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/perceptron.py</url>
-          <line>42</line>
+          <line>41</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/perceptron.py</url>
-          <line>32</line>
+          <line>31</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
@@ -466,9 +474,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -502,8 +508,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/perceptron.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="101" column="18" lean-forward="true" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
+        <state relative-caret-position="-406">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
             <element signature="e#177#234#0" expanded="false" />
