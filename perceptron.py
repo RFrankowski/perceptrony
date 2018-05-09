@@ -11,12 +11,17 @@ def sign(n):
         return -1
 
 
+def unipolar(n):
+    if n >= 0:
+        return 1
+    else:
+        return 0
+
+
 def matrixsigmoida(x):
     return 1 / (1 + math.exp(-x))
 
     # return (sigmoida(X))
-
-
 
 
 class Perceptron:
@@ -24,10 +29,10 @@ class Perceptron:
         self.weigths = []
         self.lr = random.random()
 
-    def setRandomWeigths(self,inp):
+    def setRandomWeigths(self, inp):
         if not self.weigths:
             for i in range(len(inp)):
-                self.weigths.append((random.random()*(-2))-1)
+                self.weigths.append((random.random() * (-2)) - 1)
 
     def guess(self, inputs):
         self.setRandomWeigths(inputs)
@@ -35,7 +40,7 @@ class Perceptron:
         for w in range(len(self.weigths)):
             summ += inputs[w] * self.weigths[w]
             # print summ
-        output = sign(summ)
+        output = unipolar(summ)
         return output
 
     def train(self, inputs, target):
@@ -51,13 +56,13 @@ class Perceptron:
 
 # print p.guess([-5, 45])
 # and training data
-training_data = [[[0, 0, 1], -1], [[0, 1, 1], -1], [[1, 0, 1], -1], [[1, 1, 1], 1]]
+training_data = [[[0, 0, 1], 0], [[0, 1, 1], 0], [[1, 0, 1], 0], [[1, 1, 1], 1]]
 
-training_data_or = [[[0, 0, 1], -1], [[0, 1, 1], 1], [[1, 0, 1], 1], [[1, 1, 1], 1]]
+training_data_or = [[[0, 0, 1], 0], [[0, 1, 1], 1], [[1, 0, 1], 1], [[1, 1, 1], 1]]
 
-training_data_xor = [[[0, 0, 1], -1], [[0, 1, 1], 1], [[1, 0, 1], 1], [[1, 1, 1], 1]]
+training_data_xor = [[[0, 0, 1], 0], [[0, 1, 1], 1], [[1, 0, 1], 1], [[1, 1, 1], 0]]
 
-training_data_not = [[[0], 1], [[1], -1]]
+training_data_not = [[[0], 1], [[1], 0]]
 
 
 # print p.guess([0, 0, 1])
@@ -98,7 +103,18 @@ def ucz(per, tr_data):
 
 
 ptrainNot = Perceptron()
-# ptrainNot.guess([0])
 ucz(ptrainNot, training_data_not)
 print ptrainNot.lr
 print ptrainNot.weigths
+
+# xor nie da sie zaprezentwoac jednym perceptronem
+# You could also try to change the training sequence in order to model an AND, NOR or NOT function.
+# Note that it's not possible to model an XOR function using a single perceptron like this, because the two classes (0 and 1)
+# of an XOR function are not linearly separable. In that case you would have to use multiple layers of perceptrons
+# (which is basically a small neural network).
+
+
+# ptrainXor = Perceptron()
+# ucz(ptrainXor, training_data_xor)
+# print ptrainXor.lr
+# print ptrainXor.weigths
