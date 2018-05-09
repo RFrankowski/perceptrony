@@ -24,10 +24,14 @@ class Perceptron:
     def __init__(self):
         self.weigths = []
         self.lr = random.random()
-        for i in range(3):
-            self.weigths.append(random.random())
+
+    def setRandomWeigths(self,inp):
+        if not self.weigths:
+            for i in range(len(inp)):
+                self.weigths.append((random.random()*(-2))-1)
 
     def guess(self, inputs):
+        self.setRandomWeigths(inputs)
         summ = 0
         for w in range(len(self.weigths)):
             summ += inputs[w] * self.weigths[w]
@@ -48,18 +52,18 @@ class Perceptron:
 
 # print p.guess([-5, 45])
 # and training data
-training_data = [[[0, 0, 1], 0], [[0, 1, 1], 0], [[1, 0, 1], 0], [[1, 1, 1], 1]]
+training_data = [[[0, 0, 1], -1], [[0, 1, 1], -1], [[1, 0, 1], -1], [[1, 1, 1], 1]]
 
-training_data_or = [[[0, 0, 1], 0], [[0, 1, 1], 1], [[1, 0, 1], 1], [[1, 1, 1], 1]]
+training_data_or = [[[0, 0, 1], -1], [[0, 1, 1], 1], [[1, 0, 1], 1], [[1, 1, 1], 1]]
 
-training_data_not = [[[0], 1], [[1], 0]]
+training_data_not = [[[0], 1], [[1], -1]]
 
 
 # print p.guess([0, 0, 1])
 
 
 def ucz(per, tr_data):
-    # print tr_data
+    print tr_data
     # print tr_data[2][1]
     for k in range(100):
         i = random.choice(tr_data)
@@ -87,8 +91,13 @@ def ucz(per, tr_data):
 # ucz(ptrainOr, training_data_or)
 # print ptrainOr.lr
 # print ptrainOr.weigths
-#
+
 # ptrainOr.lr = 0.167631213692
 # ptrainOr.weigths = [0.6586391948364184, 0.43477785666346414, -0.10141305826027047]
 
 
+ptrainNot = Perceptron()
+# ptrainNot.guess([0])
+ucz(ptrainNot, training_data_not)
+print ptrainNot.lr
+print ptrainNot.weigths
