@@ -54,7 +54,6 @@ class Perceptron:
             # print self.weigths
 
 
-# print p.guess([-5, 45])
 # and training data
 training_data = [[[0, 0, 1], 0], [[0, 1, 1], 0], [[1, 0, 1], 0], [[1, 1, 1], 1]]
 
@@ -62,7 +61,7 @@ training_data_or = [[[0, 0, 1], 0], [[0, 1, 1], 1], [[1, 0, 1], 1], [[1, 1, 1], 
 
 training_data_xor = [[[0, 0, 1], 0], [[0, 1, 1], 1], [[1, 0, 1], 1], [[1, 1, 1], 0]]
 
-training_data_not = [[[0], 1], [[1], 0]]
+training_data_not = [[[0, 1], 1], [[1, 1], 0]]
 
 
 # print p.guess([0, 0, 1])
@@ -80,10 +79,10 @@ def ucz(per, tr_data):
 
 
 # perceptron dla and
-# p = Perceptron()
-# ucz(p, training_data)
-# print p.lr
-# print p.weigths
+p = Perceptron()
+ucz(p, training_data)
+print p.lr
+print p.weigths
 
 # gotowy perceptron do pokazania dla and
 # pAnd = Perceptron()
@@ -102,10 +101,10 @@ def ucz(per, tr_data):
 # ptrainOr.weigths = [0.6586391948364184, 0.43477785666346414, -0.10141305826027047]
 
 
-ptrainNot = Perceptron()
-ucz(ptrainNot, training_data_not)
-print ptrainNot.lr
-print ptrainNot.weigths
+# ptrainNot = Perceptron()
+# ucz(ptrainNot, training_data_not)
+# print ptrainNot.lr
+# print ptrainNot.weigths
 
 # xor nie da sie zaprezentwoac jednym perceptronem
 # You could also try to change the training sequence in order to model an AND, NOR or NOT function.
