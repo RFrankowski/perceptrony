@@ -2,7 +2,15 @@
   <dictionary name="admin">
     <words>
       <w>aktywacji</w>
+      <w>gotowy</w>
+      <w>jednym</w>
       <w>korygowanie</w>
+      <w>perceptron</w>
+      <w>perceptronem</w>
+      <w>pokazania</w>
+      <w>ptrain</w>
+      <w>weigths</w>
+      <w>zaprezentwoac</w>
     </words>
   </dictionary>
 </component>

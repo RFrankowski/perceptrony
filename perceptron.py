@@ -70,25 +70,31 @@ training_data_not = [[[0, 1], 1], [[1, 1], 0]]
 def ucz(per, tr_data):
     print tr_data
     # print tr_data[2][1]
-    for k in range(100):
-        i = random.choice(tr_data)
-        per.train(i[0], i[1])
+    for k in range(50):
+        print "numer iteracji" + str(k)
+        for tr in tr_data:
+            i = tr
+            per.train(i[0], i[1])
+            print "wagi " + str(per.weigths)
+            print ("wejscie " + str(i[0]))
+            print " tutaj powinno byc  " + str(i[1]) + " a jest " + str(per.guess(i[0])) +"\n"
+
 
     for li in tr_data:
         print " tutaj powinno byc  " + str(li[1]) + " a jest " + str(per.guess(li[0]))
 
 
 # perceptron dla and
-p = Perceptron()
-ucz(p, training_data)
-print p.lr
-print p.weigths
+# p = Perceptron()
+# ucz(p, training_data)
+# print p.lr
+# print p.weigths
 
 # gotowy perceptron do pokazania dla and
 # pAnd = Perceptron()
 #
-# pAnd.weigths = [0.469757865067298, 0.1820034389739238, -0.5845975069602078]
-# pAnd.lr = 0.752135511929
+# pAnd.weigths = [1.005857077587072, 0.45041779087835354, -1.096726188030272]
+# pAnd.lr = 0.858687606398
 # print pAnd.guess([1, 1, 1])
 
 
@@ -113,7 +119,7 @@ print p.weigths
 # (which is basically a small neural network).
 
 
-# ptrainXor = Perceptron()
-# ucz(ptrainXor, training_data_xor)
-# print ptrainXor.lr
-# print ptrainXor.weigths
+ptrainXor = Perceptron()
+ucz(ptrainXor, training_data_xor)
+print ptrainXor.lr
+print ptrainXor.weigths
