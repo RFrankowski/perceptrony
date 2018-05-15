@@ -2,14 +2,24 @@
   <dictionary name="admin">
     <words>
       <w>aktywacji</w>
+      <w>dodanie</w>
+      <w>funkcji</w>
       <w>gotowy</w>
+      <w>inpu</w>
       <w>jednym</w>
       <w>korygowanie</w>
+      <w>mapowanie</w>
+      <w>musi</w>
       <w>perceptron</w>
       <w>perceptronem</w>
+      <w>pionowy</w>
       <w>pokazania</w>
       <w>ptrain</w>
+      <w>warstwa</w>
       <w>weigths</w>
+      <w>wejsc</w>
+      <w>wektor</w>
+      <w>wyjsciowa</w>
       <w>zaprezentwoac</w>
     </words>
   </dictionary>

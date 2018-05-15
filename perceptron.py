@@ -1,5 +1,5 @@
 import random
-import numpy as np
+
 import math
 
 
@@ -27,7 +27,7 @@ def matrixsigmoida(x):
 class Perceptron:
     def __init__(self):
         self.weigths = []
-        self.lr = random.random()
+        self.lr = 0.01
 
     def setRandomWeigths(self, inp):
         if not self.weigths:
@@ -119,7 +119,7 @@ def ucz(per, tr_data):
 # (which is basically a small neural network).
 
 
-ptrainXor = Perceptron()
-ucz(ptrainXor, training_data_xor)
-print ptrainXor.lr
-print ptrainXor.weigths
+# ptrainXor = Perceptron()
+# ucz(ptrainXor, training_data_xor)
+# print ptrainXor.lr
+# print ptrainXor.weigths
