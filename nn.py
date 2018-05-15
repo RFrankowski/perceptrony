@@ -92,7 +92,7 @@ training_data_xor = [[np.array([[0], [0]]), np.array([0])],
 
 
 def ucz(per, tr_data):
-    for k in range(5000):
+    for k in range(100000):
         for tr in tr_data:
             i = tr
             per.train(i[0], i[1])
