@@ -87,8 +87,9 @@ class NeuralNetwork:
 
 training_data_xor = [[np.array([[0], [0]]), np.array([0])],
                      [np.array([[0], [1]]), np.array([1])],
-                     [np.array([[1], [0]]), np.array([0])],
+                     [np.array([[1], [0]]), np.array([1])],
                      [np.array([[1], [1]]), np.array([0])]]
+
 
 def ucz(per, tr_data):
     for k in range(5000):
@@ -100,13 +101,13 @@ def ucz(per, tr_data):
 
 nn = NeuralNetwork(2, 2, 1)
 # musi wejsc wektor pionowy
-inpu = np.array([[1], [1]])
+# inpu = np.array([[1], [1]])
 
 
 
-print nn.feedForward(inpu)
+# print nn.feedForward(inpu)
 
-ucz(nn,training_data_xor)
+ucz(nn, training_data_xor)
 
 
 
