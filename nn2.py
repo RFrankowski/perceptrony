@@ -1,4 +1,3 @@
-# from perceptron import Perceptron
 import numpy as np
 
 training_data_xor = [[np.array([[0], [0]]), np.array([0])],
@@ -45,7 +44,6 @@ def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
 
-# to jest pochodna funkcji
 def dsigmoid(x):
     return x * (1 - x)
 
@@ -116,5 +114,5 @@ def ucz(per, tr_data):
             print " tutaj powinno byc  " + str(tr[1]) + " a jest " + str(per.predict(tr[0]))
 
 
-nn = NeuralNetwork(3, 3, 2, 1)
+nn = NeuralNetwork(3, 2, 3, 1)
 ucz(nn, training_data_3or)
