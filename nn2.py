@@ -107,12 +107,12 @@ class NeuralNetwork:
         self.weights_fh += weight_ih_deltas
         self.bias_fh += hidden_gradient
 
-def ucz(per, tr_data):
-    for k in range(10000):
-        for tr in tr_data:
-            per.train(tr[0], tr[1])
-            print " tutaj powinno byc  " + str(tr[1]) + " a jest " + str(per.predict(tr[0]))
-
-
-nn = NeuralNetwork(1, 2, 3, 1)
-ucz(nn, training_data_not)
+# def ucz(per, tr_data):
+#     for k in range(10000):
+#         for tr in tr_data:
+#             per.train(tr[0], tr[1])
+#             print " tutaj powinno byc  " + str(tr[1]) + " a jest " + str(per.predict(tr[0]))
+#
+#
+# nn = NeuralNetwork(1, 2, 3, 1)
+# ucz(nn, training_data_not)
