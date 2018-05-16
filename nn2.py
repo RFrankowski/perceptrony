@@ -29,7 +29,7 @@ training_data_3or = [[np.array([[0], [0], [0]]), np.array([0])],
                      [np.array([[1], [1], [1]]), np.array([1])]]
 
 training_data_not = [[np.array([[0]]), np.array([1])],
-                     [np.array([[0]]), np.array([0])]]
+                     [np.array([[1]]), np.array([0])]]
 
 
 def relu(x):
@@ -114,5 +114,5 @@ def ucz(per, tr_data):
             print " tutaj powinno byc  " + str(tr[1]) + " a jest " + str(per.predict(tr[0]))
 
 
-nn = NeuralNetwork(3, 2, 3, 1)
-ucz(nn, training_data_3or)
+nn = NeuralNetwork(1, 2, 3, 1)
+ucz(nn, training_data_not)

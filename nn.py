@@ -32,7 +32,7 @@ training_data_3or = [[np.array([[0], [0], [0]]), np.array([0])],
 
 
 training_data_not = [[np.array([[0]]), np.array([1])],
-                     [np.array([[0]]), np.array([0])]]
+                     [np.array([[1]]), np.array([0])]]
 
 
 def relu(x):
