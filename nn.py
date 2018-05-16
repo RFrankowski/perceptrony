@@ -121,12 +121,12 @@ def ucz(per, tr_data):
             print " tutaj powinno byc  " + str(tr[1]) + " a jest " + str(per.predict(tr[0]))
 
 
-nn = NeuralNetwork(2, 2, 1)
-# musi wejsc wektor pionowy
-# inpu = np.array([[1], [1]])
-# print nn.predict(inpu)
-
-ucz(nn, training_data_xor)
+# nn = NeuralNetwork(2, 2, 1)
+# # musi wejsc wektor pionowy
+# # inpu = np.array([[1], [1]])
+# # print nn.predict(inpu)
+#
+# ucz(nn, training_data_xor)
 
 
 
