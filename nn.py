@@ -1,6 +1,6 @@
 # from perceptron import Perceptron
 import numpy as np
-import math
+
 
 training_data_xor = [[np.array([[0], [0]]), np.array([0])],
                      [np.array([[0], [1]]), np.array([1])],
